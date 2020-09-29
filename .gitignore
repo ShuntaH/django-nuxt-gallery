@@ -486,3 +486,5 @@ modules.xml
 # End of https://www.toptal.com/developers/gitignore/api/macos,jetbrains,pycharm,webstorm,python,nuxt,django
 
 # カスタム
+.idea/sqldialects.xml
+.idea/*
