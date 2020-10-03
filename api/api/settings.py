@@ -86,7 +86,7 @@ DATABASES = {
         'NAME': 'app',
         'USER': 'root',
         'PASSWORD': 'root',
-        'HOST': '172.0.0.1',  # ローカルからdocker containerのdb接続
+        'HOST': '0.0.0.0',  # ローカルからdocker containerのdb接続
         'PORT': '3306',
         'OPTIONS': {'charset': 'utf8mb4',
                     'sql_mode': 'TRADITIONAL,NO_AUTO_VALUE_ON_ZERO',
