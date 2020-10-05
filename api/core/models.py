@@ -8,5 +8,5 @@ class Photos(models.Model):
     picture = models.FileField()
     description = models.TextField()
 
-    def __str_(self):
-        return "{} information".format(self.name)
+    def __str__(self):
+        return self.name

@@ -18,9 +18,12 @@ from django.urls import path, include  # 追加
 from django.conf import settings  # 追加
 from django.conf.urls.static import static  # 追加
 
+from .views import IndexView
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("api/", include("core.urls")),
+    path(r"", IndexView.as_view()),
 ]
 
 if settings.DEBUG:
